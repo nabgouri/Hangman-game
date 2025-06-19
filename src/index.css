@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-Mouse: "Mouse Memoirs", sans-serif;
+}
