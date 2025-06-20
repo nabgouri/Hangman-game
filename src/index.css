@@ -4,4 +4,9 @@
 
 @theme {
   --font-Mouse: "Mouse Memoirs", sans-serif;
+  --color-Blue: #2463ff;
+}
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
 }

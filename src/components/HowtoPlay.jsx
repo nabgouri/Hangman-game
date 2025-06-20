@@ -17,13 +17,17 @@ const instructions = [
       "You win by guessing all the letters in the word before your health runs out. If the health bar empties before you guess the word, you lose.",
   },
 ];
-export default function howToPlay() {
+export default function howToPlay({ returnHandler }) {
   return (
     <section>
-      <Generalheader pageTitile="How To Play" />
-      <ul>
-        {instructions.map(({ title, description }) => (
-          <InstructionCard title={title} description={description} />
+      <Generalheader returnHandler={returnHandler} pageTitile="How To Play" />
+      <ul className="mt-16 flex gap-x-8 ">
+        {instructions.map(({ title, description }, index) => (
+          <InstructionCard
+            title={title}
+            description={description}
+            index={index}
+          />
         ))}
       </ul>
     </section>
