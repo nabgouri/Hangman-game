@@ -20,7 +20,7 @@ const instructions = [
 export default function howToPlay({ returnHandler }) {
   return (
     <section>
-      <Generalheader returnHandler={returnHandler} pageTitile="How To Play" />
+      <Generalheader returnHandler={returnHandler} pageTitle="How To Play" />
       <ul className="mt-16 flex gap-x-8 ">
         {instructions.map(({ title, description }, index) => (
           <InstructionCard

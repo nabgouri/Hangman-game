@@ -10,3 +10,24 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
+.heart:before,
+.heart:after {
+  content: "";
+
+  border-radius: 50%;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  display: block;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+
+  top: 0;
+}
